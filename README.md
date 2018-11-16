@@ -1,6 +1,6 @@
 This is the Nginx configuration for hosting multiple Magento websites with php-fpm in a Centos Server. Only the basisc installation steps are mentioned here.
 
-Steps to install Nginx, PHP-FPM, MySQL on Centos7 Server
+Steps to install Nginx, PHP-FPM, MySQL and PHPMyAdmin on Centos7 Server
 
 `````````````````````````````````````````````````````````````````````````````````````````````````````````````
  Nginx Installation:
