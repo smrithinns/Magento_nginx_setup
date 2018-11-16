@@ -2,11 +2,17 @@ This is the Nginx configuration for hosting multiple Magento websites with php-f
 
 Steps to install Nginx, PHP-FPM, MySQL and PHPMyAdmin on Centos7 Server
 
-`````````````````````````````````````````````````````````````````````````````````````````````````````````````
- Nginx Installation:
- 
+Pre Install:
+
+ *Disable Selinux*
+ sed -i 's/^SELINUX=.*/SELINUX=disabled/g' /etc/selinux/config && cat /etc/selinux/config && reboot
+ *Update packages and install Extra packages*
  yum update
  yum install epel-release
+
+`````````````````````````````````````````````````````````````````````````````````````````````````````````````
+ Nginx Installation:
+
  yum install nginx
  systemctl enable nginx
  systemctl start nginx
